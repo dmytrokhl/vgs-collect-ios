@@ -12,6 +12,10 @@ import UIKit
 import CardIO
 #endif
 
+#if canImport(CardCan)
+import CardScan
+#endif
+
 internal class VGSScanProviderFactory {
     
     static func getScanProviderInstance(_ provider: ScanProvider) -> VGSScanProviderProtocol? {

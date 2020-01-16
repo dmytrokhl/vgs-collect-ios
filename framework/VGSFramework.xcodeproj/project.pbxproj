@@ -9,12 +9,11 @@
 /* Begin PBXBuildFile section */
 		320E885323A94E1800A9C1FA /* CharacterSet+extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 320E885223A94E1800A9C1FA /* CharacterSet+extension.swift */; };
 		3222A47B23CC6A4D00836A8D /* VGSCollectTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3222A47A23CC6A4D00836A8D /* VGSCollectTests.swift */; };
+		322F680A23C34E35004C1A03 /* VGSScanController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 322F680923C34E35004C1A03 /* VGSScanController.swift */; };
 		328B5C7023C8DA2600A39515 /* String+extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 328B5C6F23C8DA2600A39515 /* String+extension.swift */; };
 		328B5C7123C8DA2600A39515 /* String+extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 328B5C6F23C8DA2600A39515 /* String+extension.swift */; };
-		322F680A23C34E35004C1A03 /* VGSScanController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 322F680923C34E35004C1A03 /* VGSScanController.swift */; };
 		32AAE18823C354290053F549 /* VGSScanConfiguration.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32AAE18723C354290053F549 /* VGSScanConfiguration.swift */; };
 		32AAE18B23C354EA0053F549 /* VGSScanProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32AAE18A23C354EA0053F549 /* VGSScanProvider.swift */; };
-		32AAE18D23C360D60053F549 /* VGSCardScanProxy.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32AAE18C23C360D60053F549 /* VGSCardScanProxy.swift */; };
 		32AAE18F23C361C70053F549 /* VGSScanProviderFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32AAE18E23C361C70053F549 /* VGSScanProviderFactory.swift */; };
 		32ECBD5B23CCA66A00B74E86 /* VGSCardIOProxy.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32ECBD5A23CCA66A00B74E86 /* VGSCardIOProxy.swift */; };
 		3C514B5FF66E3CC4BE524AC2 /* Pods_VGSFramework_FrameworkTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A740A88CAAE48B864A452F49 /* Pods_VGSFramework_FrameworkTests.framework */; };
@@ -69,11 +68,10 @@
 		1CF8407A4E7AC1C8DE5FDF53 /* Pods-VGSFramework.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-VGSFramework.release.xcconfig"; path = "Target Support Files/Pods-VGSFramework/Pods-VGSFramework.release.xcconfig"; sourceTree = "<group>"; };
 		320E885223A94E1800A9C1FA /* CharacterSet+extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "CharacterSet+extension.swift"; sourceTree = "<group>"; };
 		3222A47A23CC6A4D00836A8D /* VGSCollectTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VGSCollectTests.swift; sourceTree = "<group>"; };
-		328B5C6F23C8DA2600A39515 /* String+extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+extension.swift"; sourceTree = "<group>"; };
 		322F680923C34E35004C1A03 /* VGSScanController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VGSScanController.swift; sourceTree = "<group>"; };
+		328B5C6F23C8DA2600A39515 /* String+extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+extension.swift"; sourceTree = "<group>"; };
 		32AAE18723C354290053F549 /* VGSScanConfiguration.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VGSScanConfiguration.swift; sourceTree = "<group>"; };
 		32AAE18A23C354EA0053F549 /* VGSScanProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VGSScanProvider.swift; sourceTree = "<group>"; };
-		32AAE18C23C360D60053F549 /* VGSCardScanProxy.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VGSCardScanProxy.swift; sourceTree = "<group>"; };
 		32AAE18E23C361C70053F549 /* VGSScanProviderFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VGSScanProviderFactory.swift; sourceTree = "<group>"; };
 		32ECBD5A23CCA66A00B74E86 /* VGSCardIOProxy.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VGSCardIOProxy.swift; sourceTree = "<group>"; };
 		3A48B7ABDDE4E25468A3F77B /* Pods_VGSFrameworkTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_VGSFrameworkTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -164,7 +162,6 @@
 			children = (
 				32AAE18A23C354EA0053F549 /* VGSScanProvider.swift */,
 				32AAE18E23C361C70053F549 /* VGSScanProviderFactory.swift */,
-				32AAE18C23C360D60053F549 /* VGSCardScanProxy.swift */,
 				32ECBD5A23CCA66A00B74E86 /* VGSCardIOProxy.swift */,
 			);
 			path = ScanProvider;
@@ -569,7 +566,6 @@
 				FD6F5657238E7FBB00C24123 /* CardType+icon.swift in Sources */,
 				FD05F94F2316CE5A000EAF52 /* VGSTextField.swift in Sources */,
 				FD05F9492316CE5A000EAF52 /* VGSCollect.swift in Sources */,
-				32AAE18D23C360D60053F549 /* VGSCardScanProxy.swift in Sources */,
 				FD05F9482316CE5A000EAF52 /* Enums.swift in Sources */,
 				FD1489FC232D4F6B00FD7781 /* APIClient.swift in Sources */,
 				32AAE18B23C354EA0053F549 /* VGSScanProvider.swift in Sources */,
