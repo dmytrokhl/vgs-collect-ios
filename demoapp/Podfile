@@ -9,7 +9,7 @@ target 'demoapp' do
 #  pod 'VGSCollectSDK'
   pod 'VGSCollectSDK', :path => "../"
   pod 'VGSCollectSDK/CardIO', :path => "../"
-
+  pod 'VGSCollectSDK/CardScan', :path => "../"
 
   target 'demoappTests' do
     inherit! :search_paths
