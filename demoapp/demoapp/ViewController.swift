@@ -238,8 +238,6 @@ extension ViewController: VGSCardScanControllerDelegate {
         switch type {
         case .expirationDateLong:
             return expCardDate
-        case .cvc:
-            return cvcCardNum
         case .cardNumber:
             return cardNumber
         default:

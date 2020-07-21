@@ -47,46 +47,35 @@ extension VGSCardScanHandler: ScanDelegate {
     }
       
     func userDidScanCard(_ scanViewController: ScanViewController, creditCard: CreditCard) {
-      guard let cardIOdelegate = delegate else {
-         delegate?.userDidFinishScan?()
+      guard let cardScanDelegate = delegate else {
          return
       }
       
-      let number = creditCard.number
-      let expiryMonth = creditCard.expiryMonth
-      let expiryYear = creditCard.expiryYear
-      
-      if !creditCard.number.isEmpty, let textfield = cardIOdelegate.textFieldForScannedData(type: .cardNumber) {
+      if !creditCard.number.isEmpty, let textfield = cardScanDelegate.textFieldForScannedData(type: .cardNumber) {
           textfield.setText(creditCard.number)
       }
-//      if  1...12 ~= Int(creditCard.expiryMonth), creditCard.expiryYear >= 2020 {
-//        let monthString = Int(creditCard.expiryMonth) < 10 ? "0\(creditCard.expiryMonth)" : "\(creditCard.expiryMonth)"
-//        if let textfield = cardIOdelegate.textFieldForScannedData(type: .expirationDate) {
-//          let yy = "\(creditCard.expiryYear)".suffix(2)
-//          textfield.setText("\(monthString)\(yy)")
-//        }
-//        if let textfield = cardIOdelegate.textFieldForScannedData(type: .expirationDateLong) {
-//          textfield.setText("\(monthString)\(creditCard.expiryYear)")
-//        }
-//      }
-//      if 1...12 ~= Int(creditCard.expiryMonth), let textfield = cardIOdelegate.textFieldForScannedData(type: .expirationMonth) {
-//          let monthString = Int(creditCard.expiryMonth) < 10 ? "0\(creditCard.expiryMonth)" : "\(creditCard.expiryMonth)"
-//          textfield.setText(monthString)
-//      }
-//      if creditCard.expiryYear >= 2020 {
-//        if let textfield = cardIOdelegate.textFieldForScannedData(type: .expirationYear) {
-//          let yy = String("\(creditCard.expiryYear)".suffix(2))
-//          textfield.setText(yy)
-//        }
-//        if let textfield = cardIOdelegate.textFieldForScannedData(type: .expirationYearLong) {
-//          let yy = String("\(creditCard.expiryYear)")
-//          textfield.setText(yy)
-//        }
-//      }
-//      if let cvc = creditCard.cvv, !cvc.isEmpty, let textfield = cardIOdelegate.textFieldForScannedData(type: .cvc) {
-//          textfield.setText(cvc)
-//      }
-      cardIOdelegate.userDidFinishScan?()
+      if let month = Int(creditCard.expiryMonth ?? ""), 1...12 ~= month, let year = Int(creditCard.expiryYear ?? ""), year >= 20 {
+        if let textfield = cardScanDelegate.textFieldForScannedData(type: .expirationDate) {
+          textfield.setText("\(month)\(year)")
+        }
+        if let textfield = cardScanDelegate.textFieldForScannedData(type: .expirationDateLong) {
+          let longYear = "20\(year)"
+          textfield.setText("\(month)\(longYear)")
+        }
+      }
+      if let month = Int(creditCard.expiryMonth ?? ""), 1...12 ~= month, let textfield = cardScanDelegate.textFieldForScannedData(type: .expirationMonth) {
+          textfield.setText("\(month)")
+      }
+      if let year = Int(creditCard.expiryYear ?? ""), year >= 20 {
+        if let textfield = cardScanDelegate.textFieldForScannedData(type: .expirationYear) {
+          textfield.setText("\(year)")
+        }
+        if let textfield = cardScanDelegate.textFieldForScannedData(type: .expirationYearLong) {
+          let longYear = "20\(year)"
+          textfield.setText("\(longYear)")
+        }
+      }
+      cardScanDelegate.userDidFinishScan?()
     }
 }
 #endif
