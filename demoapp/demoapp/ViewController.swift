@@ -30,7 +30,7 @@ class ViewController: UIViewController {
     }
     
     // Init CardIO Scan controller
-    var scanController = VGSCardIOScanController()
+    var scanController = VGSCardScanController()
     
 
     override func viewDidLoad() {
@@ -219,7 +219,7 @@ class ViewController: UIViewController {
     }
 }
 
-extension ViewController: VGSCardIOScanControllerDelegate {
+extension ViewController: VGSCardScanControllerDelegate {
     
     //When user press Done button on CardIO screen
     func userDidFinishScan() {
@@ -234,7 +234,7 @@ extension ViewController: VGSCardIOScanControllerDelegate {
     }
     
     //Asks VGSTextField where scanned data with type need to be set.
-    func textFieldForScannedData(type: CradIODataType) -> VGSTextField? {
+    func textFieldForScannedData(type: CradScanDataType) -> VGSTextField? {
         switch type {
         case .expirationDateLong:
             return expCardDate
