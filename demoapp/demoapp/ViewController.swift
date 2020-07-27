@@ -21,8 +21,8 @@ class ViewController: UIViewController {
     
     // VGS UI Elements
     var cardNumber = VGSCardTextField()
-    var expCardDate = VGSExpDateTextField()
-    var cvcCardNum = VGSTextField()
+    var cardExpDate = VGSExpDateTextField()
+    var cardCVCNumber = VGSTextField()
     var cardHolderName = VGSTextField()
     
     var consoleMessage: String = "" {
@@ -101,8 +101,8 @@ class ViewController: UIViewController {
         
         cardDataStackView.addArrangedSubview(cardHolderName)
         cardDataStackView.addArrangedSubview(cardNumber)
-        cardDataStackView.addArrangedSubview(expCardDate)
-        cardDataStackView.addArrangedSubview(cvcCardNum)
+        cardDataStackView.addArrangedSubview(cardExpDate)
+        cardDataStackView.addArrangedSubview(cardCVCNumber)
             
         let tapGesture = UITapGestureRecognizer(target: self, action: #selector(hideKeyboard))
         consoleLabel.addGestureRecognizer(tapGesture)
@@ -142,18 +142,19 @@ class ViewController: UIViewController {
           VGSValidationRuleCardExpirationDate(dateFormat: .longYear, error: VGSValidationErrorType.expDate.rawValue)
         ])
 
-        expCardDate.configuration = expDateConfiguration
-        expCardDate.placeholder = "MM/YYYY"
-        expCardDate.monthPickerFormat = .longSymbols
+        cardExpDate.configuration = expDateConfiguration
+        cardExpDate.placeholder = "MM/YYYY"
+        cardExpDate.monthPickerFormat = .longSymbols
+        cardExpDate.keyboardAccessoryView = makeAccessoryView()
       
         let cvcConfiguration = VGSConfiguration(collector: vgsCollect, fieldName: "card_cvc")
         cvcConfiguration.isRequired = true
         cvcConfiguration.type = .cvc
 
-        cvcCardNum.configuration = cvcConfiguration
-        cvcCardNum.isSecureTextEntry = true
-        cvcCardNum.placeholder = "CVC"
-        cvcCardNum.tintColor = .lightGray
+        cardCVCNumber.configuration = cvcConfiguration
+        cardCVCNumber.isSecureTextEntry = true
+        cardCVCNumber.placeholder = "CVC"
+        cardCVCNumber.tintColor = .lightGray
 
         let holderConfiguration = VGSConfiguration(collector: vgsCollect, fieldName: "cardHolder_name")
         holderConfiguration.type = .cardHolderName
@@ -238,9 +239,9 @@ extension ViewController: VGSCardIOScanControllerDelegate {
     func textFieldForScannedData(type: CradIODataType) -> VGSTextField? {
         switch type {
         case .expirationDateLong:
-            return expCardDate
+            return cardExpDate
         case .cvc:
-            return cvcCardNum
+            return cardCVCNumber
         case .cardNumber:
             return cardNumber
         default:
@@ -252,5 +253,37 @@ extension ViewController: VGSCardIOScanControllerDelegate {
 extension ViewController: VGSTextFieldDelegate {
   func vgsTextFieldDidChange(_ textField: VGSTextField) {
     textField.borderColor = textField.state.isValid  ? .gray : .red
+  }
+}
+
+extension ViewController {
+  
+  /// Accessory view for Date Picker
+  func makeAccessoryView() -> UIView {
+      let view = UIView(frame: CGRect(x: 0, y: 0, width: self.view.bounds.width, height: 44))
+      view.backgroundColor = .darkGray
+      let doneButton = UIButton(type: .system)
+      doneButton.setTitle("Next", for: .normal)
+      doneButton.setTitleColor(.white, for: .normal)
+      doneButton.addTarget(self, action: #selector(expDateButtonAction), for: .touchUpInside)
+      
+      view.addSubview(doneButton)
+      doneButton.translatesAutoresizingMaskIntoConstraints = false
+      let views = ["button": doneButton]
+      let h = NSLayoutConstraint.constraints(withVisualFormat: "H:|-(>=15)-[button]-(15)-|",
+                                             options: .alignAllCenterY,
+                                             metrics: nil,
+                                             views: views)
+      NSLayoutConstraint.activate(h)
+      let v = NSLayoutConstraint.constraints(withVisualFormat: "V:|[button]|",
+                                             options: .alignAllCenterX,
+                                             metrics: nil,
+                                             views: views)
+      NSLayoutConstraint.activate(v)
+      return view
+  }
+  
+  @objc func expDateButtonAction() {
+      self.cardCVCNumber.becomeFirstResponder()
   }
 }
