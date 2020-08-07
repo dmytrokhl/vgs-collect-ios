@@ -29,6 +29,7 @@ class STRP: UIViewController {
     button.addTarget(self, action: #selector(pay), for: .touchUpInside)
     return button
   }()
+  
 
   override func viewDidLoad() {
     super.viewDidLoad()
