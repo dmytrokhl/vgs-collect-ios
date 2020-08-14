@@ -10,6 +10,7 @@ import Foundation
 #if canImport(UIKit)
 import UIKit
 #endif
+import CardScan
 /*
 #if canImport(CardIO)
 import CardIO
