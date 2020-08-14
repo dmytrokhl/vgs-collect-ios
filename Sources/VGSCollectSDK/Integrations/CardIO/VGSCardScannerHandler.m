@@ -8,7 +8,7 @@
 
 #import <Foundation/Foundation.h>
 #import "VGSCardScannerHandler.h"
-@import CardIO;
+@import CardScan;
 
 @interface VGSCardScannerHandler()
 @property (strong, nonatomic) CardIOPaymentViewController *vc;
@@ -18,7 +18,7 @@
 @implementation VGSCardScannerHandler: NSObject
 
 + (BOOL)additionalModuleAvailable {
-    if ([CardIOPaymentViewController class]) {
+    if ([ScanViewController class]) {
         return YES;
     } else {
         return NO;
@@ -28,7 +28,7 @@
 - (instancetype)init {
     self = [super init];
     if (self && [VGSCardScannerHandler additionalModuleAvailable]) {
-        _vc = [[CardIOPaymentViewController alloc] init];
+        _vc = [[ScanViewController alloc] init];
     }
     return self;
 }
