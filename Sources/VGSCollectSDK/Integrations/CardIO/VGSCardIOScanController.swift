@@ -51,13 +51,13 @@ public class VGSCardIOScanController {
     /// - Parameters:
     ///   - delegate: `VGSCardIOScanControllerDelegate`. Default is `nil`.
     public required init(_ delegate: VGSCardIOScanControllerDelegate? = nil) {
-        #if canImport(CardIO)
-            self.scanHandler = VGSCardIOHandler()
-            self.delegate = delegate
-        #else
-            print("Can't import CardIO. Please check that CardIO submodule is installed")
-            return
-        #endif
+//        #if canImport(CardIO)
+//            self.scanHandler = VGSCardIOHandler()
+//            self.delegate = delegate
+//        #else
+//            print("Can't import CardIO. Please check that CardIO submodule is installed")
+//            return
+//        #endif
     }
     
     // MARK: - Methods

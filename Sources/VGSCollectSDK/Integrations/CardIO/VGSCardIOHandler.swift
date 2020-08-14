@@ -10,7 +10,7 @@ import Foundation
 #if canImport(UIKit)
 import UIKit
 #endif
-
+/*
 #if canImport(CardIO)
 import CardIO
 import AVFoundation.AVCaptureDevice
@@ -85,3 +85,4 @@ extension VGSCardIOHandler: CardIOPaymentViewControllerDelegate {
     }
 }
 #endif
+*/
