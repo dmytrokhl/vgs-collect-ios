@@ -12,6 +12,7 @@ import CardScan
 
 public class CardScanner {
   
+  public init() {}
   
   internal var scanner: ScanViewController?
   
