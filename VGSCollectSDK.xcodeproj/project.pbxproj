@@ -96,7 +96,6 @@
 		32CFC6E124EA794B00457B17 /* VGSFileInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32E4989B23FAEF8300863E61 /* VGSFileInfo.swift */; };
 		32CFC6E424EA794B00457B17 /* CardIcon.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FDE7447C238A5C96003AA46B /* CardIcon.xcassets */; };
 		32CFC6EC24EA7A6800457B17 /* CardScanner.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32CFC6EB24EA7A6800457B17 /* CardScanner.swift */; };
-		32CFC6EF24EA7E6D00457B17 /* CardScan.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 32CFC6EE24EA7E6C00457B17 /* CardScan.framework */; };
 		32E4989C23FAEF8300863E61 /* VGSFileInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32E4989B23FAEF8300863E61 /* VGSFileInfo.swift */; };
 		32F23A6D24B60E1100E389F7 /* VGSValidationRuleLengthMatch.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32F23A6C24B60E1100E389F7 /* VGSValidationRuleLengthMatch.swift */; };
 		32F23A7024B72B7B00E389F7 /* VGSPaymentCards.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32F23A6F24B72B7B00E389F7 /* VGSPaymentCards.swift */; };
@@ -248,7 +247,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				32CFC6EF24EA7E6D00457B17 /* CardScan.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -591,7 +589,6 @@
 				32CFC6AE24EA794B00457B17 /* Sources */,
 				32CFC6E224EA794B00457B17 /* Frameworks */,
 				32CFC6E324EA794B00457B17 /* Resources */,
-				32CFC6F224EA7E9400457B17 /* ShellScript */,
 			);
 			buildRules = (
 			);
@@ -704,28 +701,6 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
-
-/* Begin PBXShellScriptBuildPhase section */
-		32CFC6F224EA7E9400457B17 /* ShellScript */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-			);
-			inputPaths = (
-				"$(SRCROOT)/Carthage/Build/iOS/CardScan.framework",
-			);
-			outputFileListPaths = (
-			);
-			outputPaths = (
-				"$(BUILT_PRODUCTS_DIR)/$(FRAMEWORKS_FOLDER_PATH)/CardScan.framework",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "/usr/local/bin/carthage copy-frameworks\n";
-		};
-/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		32CFC6AE24EA794B00457B17 /* Sources */ = {
