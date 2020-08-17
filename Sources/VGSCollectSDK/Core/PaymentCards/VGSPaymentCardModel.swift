@@ -7,7 +7,7 @@
 //
 
 import Foundation
-
+import UIKit
 /// :nodoc: Payment Card Model Protocol
 public protocol VGSPaymentCardModelProtocol {
   var brand: VGSPaymentCards.CardBrand { get }

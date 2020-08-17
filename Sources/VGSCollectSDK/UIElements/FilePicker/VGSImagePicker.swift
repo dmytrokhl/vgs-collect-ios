@@ -7,6 +7,7 @@
 //
 
 import Foundation
+import UIKit
 
 /// A class that manage UIImagePickerController
 internal class VGSImagePicker: NSObject, VGSFilePickerProtocol {

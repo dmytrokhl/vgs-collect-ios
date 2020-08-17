@@ -7,6 +7,7 @@
 //
 
 import Foundation
+import UIKit
 import MobileCoreServices
 
 /// A class that manage UIDocumentPickerViewController

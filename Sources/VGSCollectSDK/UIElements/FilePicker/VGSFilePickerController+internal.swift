@@ -7,6 +7,8 @@
 //
 
 import Foundation
+import UIKit
+import MobileCoreServices
 
 internal protocol VGSFilePickerProtocol {
     var delegate: VGSFilePickerControllerDelegate? { get set }

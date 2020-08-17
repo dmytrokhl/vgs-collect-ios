@@ -7,6 +7,7 @@
 //
 
 import Foundation
+import UIKit
 
 /// Class responsible for storing and managing Payment Cards in SDK.
 /// - Contains editable defined Payment Cards Models

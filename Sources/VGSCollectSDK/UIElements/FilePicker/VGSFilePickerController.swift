@@ -7,7 +7,7 @@
 //
 
 import Foundation
-
+import UIKit
 /// Controller responsible for importing files from device sources.
 public class VGSFilePickerController {
     

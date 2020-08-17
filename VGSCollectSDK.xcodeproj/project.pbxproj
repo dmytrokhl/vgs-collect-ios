@@ -42,6 +42,61 @@
 		328B5C7023C8DA2600A39515 /* String+extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 328B5C6F23C8DA2600A39515 /* String+extension.swift */; };
 		328B5C7123C8DA2600A39515 /* String+extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 328B5C6F23C8DA2600A39515 /* String+extension.swift */; };
 		3299585D23DF043D0018FA50 /* MaskedTextFieldTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3299585C23DF043D0018FA50 /* MaskedTextFieldTest.swift */; };
+		32CFC6AD24EA794B00457B17 /* VGSCollectSDK.h in Headers */ = {isa = PBXBuildFile; fileRef = FD05F93F2316CE5A000EAF52 /* VGSCollectSDK.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		32CFC6AF24EA794B00457B17 /* VGSValidationRuleLength.swift in Sources */ = {isa = PBXBuildFile; fileRef = 324B5E7024A23E670036867E /* VGSValidationRuleLength.swift */; };
+		32CFC6B024EA794B00457B17 /* VGSTextField+UIBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDD42A3C233F67BA0005D631 /* VGSTextField+UIBuilder.swift */; };
+		32CFC6B124EA794B00457B17 /* VGSError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3219D73C2404279700F4A7E5 /* VGSError.swift */; };
+		32CFC6B224EA794B00457B17 /* VGSTextField+state.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD1B44652327D9B0009AA04A /* VGSTextField+state.swift */; };
+		32CFC6B324EA794B00457B17 /* Enums.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD05F93A2316CE5A000EAF52 /* Enums.swift */; };
+		32CFC6B424EA794B00457B17 /* VGSPaymentCardModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32F23A7124B72C1400E389F7 /* VGSPaymentCardModel.swift */; };
+		32CFC6B524EA794B00457B17 /* VGSErrorInfoKey.swift in Sources */ = {isa = PBXBuildFile; fileRef = 327C9E152407F43A004C641C /* VGSErrorInfoKey.swift */; };
+		32CFC6B624EA794B00457B17 /* Utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32059CCF2417E02E003E9481 /* Utils.swift */; };
+		32CFC6B724EA794B00457B17 /* VGSValidatior.swift in Sources */ = {isa = PBXBuildFile; fileRef = 324B5E6624A2393C0036867E /* VGSValidatior.swift */; };
+		32CFC6B824EA794B00457B17 /* VGSUnknownPaymentCardModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32F23A7524B72C5D00E389F7 /* VGSUnknownPaymentCardModel.swift */; };
+		32CFC6B924EA794B00457B17 /* VGSConfiguration.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD05F93C2316CE5A000EAF52 /* VGSConfiguration.swift */; };
+		32CFC6BA24EA794B00457B17 /* VGSValidationRule.swift in Sources */ = {isa = PBXBuildFile; fileRef = 324B5E6E24A23D530036867E /* VGSValidationRule.swift */; };
+		32CFC6BB24EA794B00457B17 /* VGSValidationRuleExpirationDate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 324B5E7424A23FA60036867E /* VGSValidationRuleExpirationDate.swift */; };
+		32CFC6BC24EA794B00457B17 /* VGSFilePickerControllerDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 325AB9CA2420C5410024134B /* VGSFilePickerControllerDelegate.swift */; };
+		32CFC6BD24EA794B00457B17 /* String+extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 328B5C6F23C8DA2600A39515 /* String+extension.swift */; };
+		32CFC6BE24EA794B00457B17 /* CardBrand+default.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32F23A7A24B8713900E389F7 /* CardBrand+default.swift */; };
+		32CFC6BF24EA794B00457B17 /* VGSCustomPaymentCardModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32F23A7324B72C4500E389F7 /* VGSCustomPaymentCardModel.swift */; };
+		32CFC6C024EA794B00457B17 /* CardType+icon.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD6F5656238E7FBB00C24123 /* CardType+icon.swift */; };
+		32CFC6C124EA794B00457B17 /* VGSCardIOHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32FD980B23D20E11005FA989 /* VGSCardIOHandler.swift */; };
+		32CFC6C224EA794B00457B17 /* APIClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD1489FB232D4F6B00FD7781 /* APIClient.swift */; };
+		32CFC6C324EA794B00457B17 /* VGSTextField+CVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD3C01C223AFC0980096B4A4 /* VGSTextField+CVC.swift */; };
+		32CFC6C424EA794B00457B17 /* VGSExpDateTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD8B62462497CD580097C9AB /* VGSExpDateTextField.swift */; };
+		32CFC6C524EA794B00457B17 /* VGSCollect+extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD1B445F2327A6A4009AA04A /* VGSCollect+extension.swift */; settings = {COMPILER_FLAGS = "-w"; }; };
+		32CFC6C624EA794B00457B17 /* VGSImagePicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3262B2FC23F5A36E00D4A73D /* VGSImagePicker.swift */; };
+		32CFC6C724EA794B00457B17 /* VGSFileSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3262B2F723F5A32400D4A73D /* VGSFileSource.swift */; };
+		32CFC6C824EA794B00457B17 /* VGSCardTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDD398ED247D776600B55057 /* VGSCardTextField.swift */; };
+		32CFC6C924EA794B00457B17 /* VGSDocumentPicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3262B2FE23F5A3B300D4A73D /* VGSDocumentPicker.swift */; };
+		32CFC6CA24EA794B00457B17 /* Storage.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD05F9392316CE5A000EAF52 /* Storage.swift */; };
+		32CFC6CB24EA794B00457B17 /* VGSCollect+network.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDE247CE246749C3008D75B0 /* VGSCollect+network.swift */; };
+		32CFC6CC24EA794B00457B17 /* VGSTextFieldDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD362EDE2401659100B4A640 /* VGSTextFieldDelegate.swift */; };
+		32CFC6CD24EA794B00457B17 /* VGSCollect.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD05F93B2316CE5A000EAF52 /* VGSCollect.swift */; };
+		32CFC6CE24EA794B00457B17 /* VGSValidationRulePattern.swift in Sources */ = {isa = PBXBuildFile; fileRef = 324B5E6A24A23C2D0036867E /* VGSValidationRulePattern.swift */; };
+		32CFC6CF24EA794B00457B17 /* VGSValidationRulePaymentCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 324B5E9C24A64A600036867E /* VGSValidationRulePaymentCard.swift */; };
+		32CFC6D024EA794B00457B17 /* VGSErrorInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 327C9E132407EF92004C641C /* VGSErrorInfo.swift */; };
+		32CFC6D124EA794B00457B17 /* Calendar+extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32F4B7F324C881FA006086F3 /* Calendar+extension.swift */; };
+		32CFC6D224EA794B00457B17 /* VGSValidationRuleLengthMatch.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32F23A6C24B60E1100E389F7 /* VGSValidationRuleLengthMatch.swift */; };
+		32CFC6D324EA794B00457B17 /* VGSTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD05F9442316CE5A000EAF52 /* VGSTextField.swift */; };
+		32CFC6D424EA794B00457B17 /* VGSFilePickerConfiguration.swift in Sources */ = {isa = PBXBuildFile; fileRef = 328A573F23FADC3500714675 /* VGSFilePickerConfiguration.swift */; };
+		32CFC6D524EA794B00457B17 /* VGSPaymentCards.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32F23A6F24B72B7B00E389F7 /* VGSPaymentCards.swift */; };
+		32CFC6D624EA794B00457B17 /* VGSFilePickerController+internal.swift in Sources */ = {isa = PBXBuildFile; fileRef = 328A574123FADD3D00714675 /* VGSFilePickerController+internal.swift */; };
+		32CFC6D724EA794B00457B17 /* MaskedTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD1489FE232D4F8000FD7781 /* MaskedTextField.swift */; };
+		32CFC6D824EA794B00457B17 /* CharacterSet+extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 320E885223A94E1800A9C1FA /* CharacterSet+extension.swift */; };
+		32CFC6D924EA794B00457B17 /* VGSCardIOScanController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32FD980723D1FAF9005FA989 /* VGSCardIOScanController.swift */; };
+		32CFC6DA24EA794B00457B17 /* MaskedTextField+security.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD4ED0E22373662500AEAD24 /* MaskedTextField+security.swift */; };
+		32CFC6DB24EA794B00457B17 /* VGSFilePickerController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3262B30023F6CBCB00D4A73D /* VGSFilePickerController.swift */; };
+		32CFC6DC24EA794B00457B17 /* VGSValidationRuleLuhnCheck.swift in Sources */ = {isa = PBXBuildFile; fileRef = 324B5E7224A23F6B0036867E /* VGSValidationRuleLuhnCheck.swift */; };
+		32CFC6DD24EA794B00457B17 /* State.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD148A06232EC53600FD7781 /* State.swift */; };
+		32CFC6DE24EA794B00457B17 /* VGSValidationError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 324B5E6C24A23CC50036867E /* VGSValidationError.swift */; };
+		32CFC6DF24EA794B00457B17 /* VGSCardIOScanControllerDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32FD980D23D5E3A9005FA989 /* VGSCardIOScanControllerDelegate.swift */; };
+		32CFC6E024EA794B00457B17 /* VGSCollect+internal.swift in Sources */ = {isa = PBXBuildFile; fileRef = 323105622417DF07009C3360 /* VGSCollect+internal.swift */; };
+		32CFC6E124EA794B00457B17 /* VGSFileInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32E4989B23FAEF8300863E61 /* VGSFileInfo.swift */; };
+		32CFC6E424EA794B00457B17 /* CardIcon.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FDE7447C238A5C96003AA46B /* CardIcon.xcassets */; };
+		32CFC6EC24EA7A6800457B17 /* CardScanner.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32CFC6EB24EA7A6800457B17 /* CardScanner.swift */; };
+		32CFC6EF24EA7E6D00457B17 /* CardScan.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 32CFC6EE24EA7E6C00457B17 /* CardScan.framework */; };
 		32E4989C23FAEF8300863E61 /* VGSFileInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32E4989B23FAEF8300863E61 /* VGSFileInfo.swift */; };
 		32F23A6D24B60E1100E389F7 /* VGSValidationRuleLengthMatch.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32F23A6C24B60E1100E389F7 /* VGSValidationRuleLengthMatch.swift */; };
 		32F23A7024B72B7B00E389F7 /* VGSPaymentCards.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32F23A6F24B72B7B00E389F7 /* VGSPaymentCards.swift */; };
@@ -132,6 +187,10 @@
 		328A574123FADD3D00714675 /* VGSFilePickerController+internal.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "VGSFilePickerController+internal.swift"; sourceTree = "<group>"; };
 		328B5C6F23C8DA2600A39515 /* String+extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+extension.swift"; sourceTree = "<group>"; };
 		3299585C23DF043D0018FA50 /* MaskedTextFieldTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MaskedTextFieldTest.swift; sourceTree = "<group>"; };
+		32CFC6E824EA794B00457B17 /* VGSCollectSDKWithScanner.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = VGSCollectSDKWithScanner.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		32CFC6E924EA794B00457B17 /* VGSCollectSDKWithScanner.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = VGSCollectSDKWithScanner.plist; path = "/Users/dima/vgs-collect-ios/VGSCollectSDKWithScanner.plist"; sourceTree = "<absolute>"; };
+		32CFC6EB24EA7A6800457B17 /* CardScanner.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardScanner.swift; sourceTree = "<group>"; };
+		32CFC6EE24EA7E6C00457B17 /* CardScan.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CardScan.framework; path = Carthage/Build/iOS/CardScan.framework; sourceTree = "<group>"; };
 		32E4989B23FAEF8300863E61 /* VGSFileInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VGSFileInfo.swift; sourceTree = "<group>"; };
 		32F23A6C24B60E1100E389F7 /* VGSValidationRuleLengthMatch.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VGSValidationRuleLengthMatch.swift; sourceTree = "<group>"; };
 		32F23A6F24B72B7B00E389F7 /* VGSPaymentCards.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VGSPaymentCards.swift; sourceTree = "<group>"; };
@@ -185,6 +244,14 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		32CFC6E224EA794B00457B17 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				32CFC6EF24EA7E6D00457B17 /* CardScan.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		FD12B9AC2304619100B670DD /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -243,6 +310,23 @@
 				32E4989B23FAEF8300863E61 /* VGSFileInfo.swift */,
 			);
 			path = FilePicker;
+			sourceTree = "<group>";
+		};
+		32CFC6EA24EA7A5A00457B17 /* VGSCollectSDKWithScanner */ = {
+			isa = PBXGroup;
+			children = (
+				32CFC6EB24EA7A6800457B17 /* CardScanner.swift */,
+				32CFC6E924EA794B00457B17 /* VGSCollectSDKWithScanner.plist */,
+			);
+			path = VGSCollectSDKWithScanner;
+			sourceTree = "<group>";
+		};
+		32CFC6ED24EA7E6C00457B17 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				32CFC6EE24EA7E6C00457B17 /* CardScan.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 		32F23A6E24B72B6A00E389F7 /* PaymentCards */ = {
@@ -323,6 +407,7 @@
 				FD8A9722233CF63D0079FA32 /* Sources */,
 				FD8A9723233CF6470079FA32 /* Tests */,
 				FD12B9B02304619100B670DD /* Products */,
+				32CFC6ED24EA7E6C00457B17 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -331,6 +416,7 @@
 			children = (
 				FD12B9AF2304619100B670DD /* VGSCollectSDK.framework */,
 				FD2495512330CB49009024E6 /* FrameworkTests.xctest */,
+				32CFC6E824EA794B00457B17 /* VGSCollectSDKWithScanner.framework */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -406,6 +492,7 @@
 		FD8A9722233CF63D0079FA32 /* Sources */ = {
 			isa = PBXGroup;
 			children = (
+				32CFC6EA24EA7A5A00457B17 /* VGSCollectSDKWithScanner */,
 				FD05F9372316CE5A000EAF52 /* VGSCollectSDK */,
 			);
 			path = Sources;
@@ -477,6 +564,14 @@
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
+		32CFC6AC24EA794B00457B17 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				32CFC6AD24EA794B00457B17 /* VGSCollectSDK.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		FD12B9AA2304619100B670DD /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
@@ -488,6 +583,25 @@
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
+		32CFC6AB24EA794B00457B17 /* VGSCollectSDKWithScanner */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 32CFC6E524EA794B00457B17 /* Build configuration list for PBXNativeTarget "VGSCollectSDKWithScanner" */;
+			buildPhases = (
+				32CFC6AC24EA794B00457B17 /* Headers */,
+				32CFC6AE24EA794B00457B17 /* Sources */,
+				32CFC6E224EA794B00457B17 /* Frameworks */,
+				32CFC6E324EA794B00457B17 /* Resources */,
+				32CFC6F224EA7E9400457B17 /* ShellScript */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = VGSCollectSDKWithScanner;
+			productName = framework;
+			productReference = 32CFC6E824EA794B00457B17 /* VGSCollectSDKWithScanner.framework */;
+			productType = "com.apple.product-type.framework";
+		};
 		FD12B9AE2304619100B670DD /* VGSCollectSDK */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = FD12B9C32304619200B670DD /* Build configuration list for PBXNativeTarget "VGSCollectSDK" */;
@@ -559,11 +673,20 @@
 			targets = (
 				FD12B9AE2304619100B670DD /* VGSCollectSDK */,
 				FD2495502330CB49009024E6 /* FrameworkTests */,
+				32CFC6AB24EA794B00457B17 /* VGSCollectSDKWithScanner */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		32CFC6E324EA794B00457B17 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				32CFC6E424EA794B00457B17 /* CardIcon.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		FD12B9AD2304619100B670DD /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -582,7 +705,88 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		32CFC6F224EA7E9400457B17 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"$(SRCROOT)/Carthage/Build/iOS/CardScan.framework",
+			);
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(BUILT_PRODUCTS_DIR)/$(FRAMEWORKS_FOLDER_PATH)/CardScan.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "/usr/local/bin/carthage copy-frameworks\n";
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
+		32CFC6AE24EA794B00457B17 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				32CFC6AF24EA794B00457B17 /* VGSValidationRuleLength.swift in Sources */,
+				32CFC6B024EA794B00457B17 /* VGSTextField+UIBuilder.swift in Sources */,
+				32CFC6B124EA794B00457B17 /* VGSError.swift in Sources */,
+				32CFC6B224EA794B00457B17 /* VGSTextField+state.swift in Sources */,
+				32CFC6B324EA794B00457B17 /* Enums.swift in Sources */,
+				32CFC6B424EA794B00457B17 /* VGSPaymentCardModel.swift in Sources */,
+				32CFC6B524EA794B00457B17 /* VGSErrorInfoKey.swift in Sources */,
+				32CFC6B624EA794B00457B17 /* Utils.swift in Sources */,
+				32CFC6B724EA794B00457B17 /* VGSValidatior.swift in Sources */,
+				32CFC6B824EA794B00457B17 /* VGSUnknownPaymentCardModel.swift in Sources */,
+				32CFC6B924EA794B00457B17 /* VGSConfiguration.swift in Sources */,
+				32CFC6BA24EA794B00457B17 /* VGSValidationRule.swift in Sources */,
+				32CFC6BB24EA794B00457B17 /* VGSValidationRuleExpirationDate.swift in Sources */,
+				32CFC6BC24EA794B00457B17 /* VGSFilePickerControllerDelegate.swift in Sources */,
+				32CFC6BD24EA794B00457B17 /* String+extension.swift in Sources */,
+				32CFC6BE24EA794B00457B17 /* CardBrand+default.swift in Sources */,
+				32CFC6BF24EA794B00457B17 /* VGSCustomPaymentCardModel.swift in Sources */,
+				32CFC6C024EA794B00457B17 /* CardType+icon.swift in Sources */,
+				32CFC6C124EA794B00457B17 /* VGSCardIOHandler.swift in Sources */,
+				32CFC6C224EA794B00457B17 /* APIClient.swift in Sources */,
+				32CFC6EC24EA7A6800457B17 /* CardScanner.swift in Sources */,
+				32CFC6C324EA794B00457B17 /* VGSTextField+CVC.swift in Sources */,
+				32CFC6C424EA794B00457B17 /* VGSExpDateTextField.swift in Sources */,
+				32CFC6C524EA794B00457B17 /* VGSCollect+extension.swift in Sources */,
+				32CFC6C624EA794B00457B17 /* VGSImagePicker.swift in Sources */,
+				32CFC6C724EA794B00457B17 /* VGSFileSource.swift in Sources */,
+				32CFC6C824EA794B00457B17 /* VGSCardTextField.swift in Sources */,
+				32CFC6C924EA794B00457B17 /* VGSDocumentPicker.swift in Sources */,
+				32CFC6CA24EA794B00457B17 /* Storage.swift in Sources */,
+				32CFC6CB24EA794B00457B17 /* VGSCollect+network.swift in Sources */,
+				32CFC6CC24EA794B00457B17 /* VGSTextFieldDelegate.swift in Sources */,
+				32CFC6CD24EA794B00457B17 /* VGSCollect.swift in Sources */,
+				32CFC6CE24EA794B00457B17 /* VGSValidationRulePattern.swift in Sources */,
+				32CFC6CF24EA794B00457B17 /* VGSValidationRulePaymentCard.swift in Sources */,
+				32CFC6D024EA794B00457B17 /* VGSErrorInfo.swift in Sources */,
+				32CFC6D124EA794B00457B17 /* Calendar+extension.swift in Sources */,
+				32CFC6D224EA794B00457B17 /* VGSValidationRuleLengthMatch.swift in Sources */,
+				32CFC6D324EA794B00457B17 /* VGSTextField.swift in Sources */,
+				32CFC6D424EA794B00457B17 /* VGSFilePickerConfiguration.swift in Sources */,
+				32CFC6D524EA794B00457B17 /* VGSPaymentCards.swift in Sources */,
+				32CFC6D624EA794B00457B17 /* VGSFilePickerController+internal.swift in Sources */,
+				32CFC6D724EA794B00457B17 /* MaskedTextField.swift in Sources */,
+				32CFC6D824EA794B00457B17 /* CharacterSet+extension.swift in Sources */,
+				32CFC6D924EA794B00457B17 /* VGSCardIOScanController.swift in Sources */,
+				32CFC6DA24EA794B00457B17 /* MaskedTextField+security.swift in Sources */,
+				32CFC6DB24EA794B00457B17 /* VGSFilePickerController.swift in Sources */,
+				32CFC6DC24EA794B00457B17 /* VGSValidationRuleLuhnCheck.swift in Sources */,
+				32CFC6DD24EA794B00457B17 /* State.swift in Sources */,
+				32CFC6DE24EA794B00457B17 /* VGSValidationError.swift in Sources */,
+				32CFC6DF24EA794B00457B17 /* VGSCardIOScanControllerDelegate.swift in Sources */,
+				32CFC6E024EA794B00457B17 /* VGSCollect+internal.swift in Sources */,
+				32CFC6E124EA794B00457B17 /* VGSFileInfo.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		FD12B9AB2304619100B670DD /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -685,6 +889,77 @@
 /* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
+		32CFC6E624EA794B00457B17 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_IDENTITY = "";
+				CODE_SIGN_STYLE = Automatic;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = "";
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
+				INFOPLIST_FILE = VGSCollectSDKWithScanner.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.6.1;
+				PRODUCT_BUNDLE_IDENTIFIER = com.vgs.framework;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				"PROVISIONING_PROFILE_SPECIFIER[sdk=macosx*]" = "";
+				SKIP_INSTALL = YES;
+				SUPPORTS_MACCATALYST = NO;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		32CFC6E724EA794B00457B17 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_IDENTITY = "";
+				CODE_SIGN_STYLE = Automatic;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = "";
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
+				INFOPLIST_FILE = VGSCollectSDKWithScanner.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.6.1;
+				PRODUCT_BUNDLE_IDENTIFIER = com.vgs.framework;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				"PROVISIONING_PROFILE_SPECIFIER[sdk=macosx*]" = "";
+				SKIP_INSTALL = YES;
+				SUPPORTS_MACCATALYST = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
 		FD12B9C12304619200B670DD /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -925,6 +1200,15 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		32CFC6E524EA794B00457B17 /* Build configuration list for PBXNativeTarget "VGSCollectSDKWithScanner" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				32CFC6E624EA794B00457B17 /* Debug */,
+				32CFC6E724EA794B00457B17 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		FD12B9A92304619100B670DD /* Build configuration list for PBXProject "VGSCollectSDK" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (

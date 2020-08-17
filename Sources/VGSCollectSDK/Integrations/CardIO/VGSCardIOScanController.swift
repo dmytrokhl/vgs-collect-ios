@@ -5,7 +5,7 @@
 //  Created by Dima on 17.01.2020.
 //  Copyright © 2020 VGS. All rights reserved.
 //
-
+/*
 import Foundation
 import AVFoundation.AVCaptureDevice
 
@@ -80,3 +80,5 @@ public class VGSCardIOScanController {
         scanHandler?.dismissScanVC(animated: animated, completion: completion)
     }
 }
+
+*/
