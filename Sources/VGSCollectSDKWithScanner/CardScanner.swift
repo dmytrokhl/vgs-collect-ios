@@ -8,20 +8,28 @@
 
 import Foundation
 import UIKit
+#if canImport(CardScan)
 import CardScan
-
+#endif
 public class CardScanner {
   
   public init() {}
   
   internal var scanner: ScanViewController?
   
-  public func presentScanner(form: UIViewController, delegate: ScanDelegate?) {
-    guard let vc = ScanViewController.createViewController(withDelegate: delegate) else {
+  public func presentScanner(form: UIViewController, delegate: UIViewController?) {
+    showScanView(from: form)
+  }
+  
+  func showScanView(from: UIViewController) {
+    #if canImport(CardScan)
+    guard let vc = ScanViewController.createViewController(withDelegate: nil) else {
         print("This device is incompatible with CardScan")
         return
     }
     self.scanner = vc
-    form.present(vc, animated: true)
+    from.present(vc, animated: true)
+    #endif
   }
 }
+
