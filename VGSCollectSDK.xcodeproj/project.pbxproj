@@ -48,6 +48,7 @@
 		32CFC72024EBEFF700457B17 /* VGSCardScanController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32CFC71F24EBEFF700457B17 /* VGSCardScanController.swift */; };
 		32CFC72224EBF28B00457B17 /* VGSCardScanHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32CFC72124EBF28B00457B17 /* VGSCardScanHandler.swift */; };
 		32CFC72524EBF3B500457B17 /* CardScan.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 32CFC72424EBF3B500457B17 /* CardScan.framework */; };
+		32CFC72D24EC029800457B17 /* VGSCollectSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FD12B9AF2304619100B670DD /* VGSCollectSDK.framework */; };
 		32E4989C23FAEF8300863E61 /* VGSFileInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32E4989B23FAEF8300863E61 /* VGSFileInfo.swift */; };
 		32F23A6D24B60E1100E389F7 /* VGSValidationRuleLengthMatch.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32F23A6C24B60E1100E389F7 /* VGSValidationRuleLengthMatch.swift */; };
 		32F23A7024B72B7B00E389F7 /* VGSPaymentCards.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32F23A6F24B72B7B00E389F7 /* VGSPaymentCards.swift */; };
@@ -211,6 +212,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				32CFC72D24EC029800457B17 /* VGSCollectSDK.framework in Frameworks */,
 				32CFC72524EBF3B500457B17 /* CardScan.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
