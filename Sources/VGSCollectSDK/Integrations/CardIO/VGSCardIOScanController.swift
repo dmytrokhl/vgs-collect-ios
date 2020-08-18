@@ -8,7 +8,7 @@
 
 import Foundation
 import AVFoundation.AVCaptureDevice
-
+/*
 #if canImport(UIKit)
 import UIKit
 #endif
@@ -80,3 +80,4 @@ public class VGSCardIOScanController {
         scanHandler?.dismissScanVC(animated: animated, completion: completion)
     }
 }
+*/
