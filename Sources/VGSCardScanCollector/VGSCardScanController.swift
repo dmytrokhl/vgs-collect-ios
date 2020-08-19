@@ -7,7 +7,9 @@
 //
 
 import Foundation
+#if !COCOAPODS
 import VGSCollectSDK
+#endif
 
 /// Controller responsible for managing CardScan scanner
 public class VGSCardScanController {

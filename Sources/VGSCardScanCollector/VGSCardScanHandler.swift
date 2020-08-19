@@ -7,8 +7,10 @@
 //
 
 import Foundation
-import VGSCollectSDK
 import CardScan
+#if !COCOAPODS
+import VGSCollectSDK
+#endif
 
 internal class VGSCardScanHandler: NSObject, VGSScanHandlerProtocol {
     
