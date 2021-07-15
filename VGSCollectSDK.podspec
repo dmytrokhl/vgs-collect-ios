@@ -45,4 +45,9 @@ Pod::Spec.new do |spec|
     cardIO.dependency "VGSCollectSDK/Core"
     cardIO.dependency "CardIOSDK", "5.5.6"
   end
+  
+  spec.subspec 'DyScan' do |dyscan|
+      dyscan.dependency "VGSCollectSDK/Core"
+      dyscan.dependency "DyScan/5.1"
+  end
 end
